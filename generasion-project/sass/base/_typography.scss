@@ -1,0 +1,54 @@
+
+body {
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color:$color-grey;
+   
+   
+}
+
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+
+    &--main {
+        display: block;
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: 1rem;
+        animation: pulse 8s infinite;
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 1rem;
+    }
+}
+
+.heading-secondary {
+font-size: 3.5rem;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+
+.heading-tertiary {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    }
+    
+.paragraph {
+    color: $color-white;
+    font-size: 1.8rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}    

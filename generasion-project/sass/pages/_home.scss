@@ -1,0 +1,64 @@
+.section-about {
+    background-color: $color-secondary;
+    padding: 5rem 0;
+    margin: 1rem 0;
+    & .heading-secondary {
+        color: $color-white;
+        padding-bottom: 2.5rem;
+    }
+}
+
+.section-feature {
+    background-color: $color-about;
+    padding: 5rem 0;
+    margin: 1rem 0;
+    & .col-1-of-5 {
+        width: calc((100% - 4 * #{$gutter-horizontal-small}) / 5) !important;
+    }
+    & [class^="col-"] {
+        // background-color: red;
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal-small-1; // @include respond(tab-port) {
+            //     margin-right: 0;
+            //     margin-bottom: $gutter-vertical-small;
+            // }
+        } // @include respond(tab-port) {
+        //     width: 100% !important;
+        // }
+    }
+    & .heading-secondary {
+        color: $color-secondary;
+        padding-bottom: 2.5rem;
+    }
+    & a{
+        text-decoration: none;
+    }
+}
+
+.section-media {
+    position: relative;
+    background-color: $color-media;
+    padding: 5rem 0;
+    margin: 1rem 0;
+    padding-bottom: 5rem;
+    & .row {
+        margin-top: 5rem;
+    }
+    & .btn-text {
+        position: absolute;
+        color: $color-secondary;
+        bottom: 2rem;
+        border-bottom: 1px solid $color-secondary;
+        transform: translateX(-50%);
+    }
+}
+
+.section-faq {
+    background-color: $color-secondary-light;
+    padding: 5rem 0;
+    margin: 1rem 0;
+    & .heading-secondary {
+        color: $color-white;
+        padding-bottom: 2.5rem;
+    }
+}
